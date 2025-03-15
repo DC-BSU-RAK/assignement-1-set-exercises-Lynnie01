@@ -1,0 +1,78 @@
+.header-image {    
+    /* These are the properties for the top image of the pie. This  
+       includes the width of the image, the height, and object-fit, 
+       which ensures the entire container is covered. Lastly, display is set to block. */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {   
+    /* This section styles the heading, including color, font size, text alignment, and font family. */
+    color: rgb(7, 79, 10);           
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    /* This section adds a border, background color, width, and padding to the headings */
+   
+     font-size: 30px;
+    color: #113b1c;
+    
+}
+
+ul, ol {                          
+    /* Styles the background of the ingredients and instructions lists. */
+    background: hwb(43 69% 12%);
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+/* These are the styles for list items */
+li {
+    margin-bottom: 5px;
+}
+/*  */
+body {
+    background-color: #ede4d0;
+}
+
+/* Step Images Section */
+.step-images {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Container for Images */
+.image-container {
+display: flex; /* Align images in a row */
+flex-wrap: wrap; /* Allows wrapping on smaller screens */
+gap: 15px; /* Space between images */
+justify-content: center; /* Centers images horizontally */
+}
+/*  styles for step-by-step images section */
+.step-images {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px; /* Adds spacing between images */
+}
+/* styles for individial step images */
+.step-images img {
+width: 200px; /* Adjust size as needed */
+height: auto;
+border-radius: 10px; /* Adds rounded corners */
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+/* style for the footer */
+footer {
+text-align: center;
+padding: 20px;
+background: #ebd5ae;
+color: white;
+margin-top: 20px;
+border-radius: 5px;
+}
