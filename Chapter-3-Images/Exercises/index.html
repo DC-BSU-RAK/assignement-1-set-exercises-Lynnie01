@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Life - Three Cities</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Pure black background */
+            color: #f4f4f4; /* Light text for contrast */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 2.5em;
+            color: #fff; /* White text */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #ddd; /* Light gray text */
+            margin-top: 20px;
+        }
+
+        /* Image container styling */
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* Space between image and camera */
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px; /* Wider container to fit image and camera */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+        }
+
+        /* Image styling */
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            filter: grayscale(100%); /* Make images black and white */
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        img:hover {
+            filter: grayscale(0%); /* Revert to color on hover */
+            transform: scale(1.02); /* Slight zoom on hover */
+        }
+
+        /* Camera icon styling */
+        .camera {
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .camera-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+
+        .camera-icon::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #555;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .camera-icon::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            border: 5px solid #555;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .camera-message {
+            font-size: 0.9em;
+            color: #bbb;
+            margin-top: 10px;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 0.9em;
+            color: #bbb; /* Light gray text */
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main heading -->
+    <h1>Urban Life</h1>
+    
+    <!-- Calgary City section -->
+    <div class="image-container">
+        <img src="https://plus.unsplash.com/premium_photo-1672116452571-896980a801c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calgary City Skyline" title="Calgary, Canada" width="300" height="200">
+        <div class="camera">
+            <div class="camera-icon"></div>
+            <div class="camera-message">Press on the image to see original color</div>
+        </div>
+    </div>
+    <p>Calgary, AB, Canada<br>
+    Published on December 29, 2022<br>
+    Licensed under the Unsplash+ License</p>
+    
+    <!-- New York City section -->
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW58ZW58MHx8MHx8fDA%3D" alt="New York City Skyline" title="New York, USA" width="300" height="200">
+        <div class="camera">
+            <div class="camera-icon"></div>
+            <div class="camera-message">Press on the image to see original color</div>
+        </div>
+    </div>
+    <p>New York, United States<br>
+    Published on October 4, 2017<br>
+    FUJIFILM, X-T2<br>
+    Free to use under the Unsplash License</p>
+    
+    <!-- Chicago City section -->
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1496850574977-a4607106a874?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXJiYW58ZW58MHx8MHx8fDA%3D" alt="Chicago City Skyline" title="Chicago, USA" width="300" height="200">
+        <div class="camera">
+            <div class="camera-icon"></div>
+            <div class="camera-message">Press on the image to see original color</div>
+        </div>
+    </div>
+    <p>Chicago, United States<br>
+    Published on June 7, 2017<br>
+    Canon, EOS 7D Mark II<br>
+    Free to use under the Unsplash License</p>
+</body>
+</html>
