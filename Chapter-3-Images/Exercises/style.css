@@ -1,107 +1,110 @@
-{font-family: 'Arial', sans-serif;
-background-color: #000; /* Pure black background */
-color: #f4f4f4; /* Light text for contrast */
-margin: 0;
-padding: 20px;
-text-align: center;
+  /* General body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Pure black background */
+    color: #f4f4f4; /* Light text for contrast */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Header styling */
+/*  First Heading  styling details  */
 h1 {
-font-size: 2.5em;
-color: #fff; /* White text */
-margin-bottom: 20px;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+    font-size: 2.5em;
+    color: #fff; /* White text */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 h2 {
-font-size: 1.8em;
-color: #ddd; /* Light gray text */
-margin-top: 20px;
+    font-size: 1.8em;
+    color: #ddd; /*  The color of the font for the second heading is Light gray text */
+    margin-top: 20px;
 }
 
-/* Image container styling */
+/* Image container styling details */
 .image-container {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px; /* Space between image and camera */
-background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
-margin: 20px auto;
-padding: 20px;
-max-width: 800px; /* Wider container to fit image and camera */
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and camera */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for  a bit of contrast */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* Wider container to fit image and camera  on our website*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-container:hover {
-transform: scale(1.05);
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /*  This Enhances shadow on hover */
 }
 
-/* Image styling */
+/* Image styling section  */
 img {
-width: 300px;
-height: auto;
-border-radius: 10px;
-filter: grayscale(100%); /* Make images black and white */
-transition: filter 0.3s ease, transform 0.3s ease;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    filter: grayscale(100%); /*This is a filter Making the images black and white */
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 img:hover {
-filter: grayscale(0%); /* Revert to color on hover */
-transform: scale(1.02); /* Slight zoom on hover */
+    filter: grayscale(0%); /* This Reverts  to the color on hover */
+    transform: scale(1.02); /*  And there is a slight  zoom on hover */
 }
 
-/* Camera icon styling */
+/*  This is the mini Camera icon styling  */
 .camera {
-text-align: center;
-font-size: 1.2em;
-color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
 }
 
 .camera-icon {
-width: 80px;
-height: 80px;
-background-color: #333;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0 auto 10px;
-position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    position: relative;
 }
 
 .camera-icon::before {
-content: '';
-width: 20px;
-height: 20px;
-background-color: #555;
-border-radius: 50%;
-position: absolute;
-top: 10px;
-left: 10px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .camera-icon::after {
-content: '';
-width: 40px;
-height: 40px;
-border: 5px solid #555;
-border-radius: 50%;
-position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 5px solid #555;
+    border-radius: 50%;
+    position: absolute;
 }
 
 .camera-message {
-font-size: 0.9em;
-color: #bbb;
-margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 10px;
 }
 
-/* Paragraph styling */
+/*  This section is for the Paragraph styling of our website  */
 p {
-font-size: 0.9em;
-color: #bbb; /* Light gray text */
-line-height: 1.6;
-margin-top: 10px;}
+    font-size: 0.9em;
+    color: #bbb; /* Light gray text  on our paragragraphs */
+    line-height: 1.6;
+    margin-top: 10px;
+}
