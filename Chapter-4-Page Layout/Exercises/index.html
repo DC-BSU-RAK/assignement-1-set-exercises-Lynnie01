@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Fest 2022</title>
+    <style>
+        /* These are the stles of our webpage  */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+        }
+        
+        /*  And this is the style of the header  */
+        header {
+            background-color: #17072b;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: Tahoma, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* This is the main details or content  */
+        main {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            gap: 30px;
+        }
+        
+        .welcome {
+            flex: 2;
+        }
+        
+        .welcome h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .welcome p {
+            margin-bottom: 20px;
+        }
+        
+        .line-up {
+            flex: 1;
+            background-color: #172d67;
+            color: #ffffff;
+            padding: 20px;
+        }
+        
+        .line-up h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .line-up ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+        
+        .line-up ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .line-up ul li:before {
+            content: "-";
+            position: absolute;
+            left: 0;
+        }
+        
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .image-gallery img {
+            width: 48%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+        
+        /*  This is the Footer  at the bottom of the web page */
+        footer {
+            background-color: #8c15e9;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGI FEST 2022</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">What's On</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- This is the welcome message section and the with addition information about digi fest -->
+    <main> 
+        <section class="welcome">
+            <h2>Welcome</h2>
+            <p>
+                Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating 'collaboration', so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="coding" width="480">
+        </section>
+
+        <!-- This is the line-up section with all the details  -->
+
+        <aside class="line-up">
+            <h2>Line Up</h2>
+            <ul>
+                <li>Introduction to HTML and CSS</li>
+                <li>Links and images</li>
+                <li>Page Layout</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5zaWRlJTIwb2YlMjBjb21wdXRlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Tech Event 1">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="Tech Event 2">
+            </div>
+        </aside>
+    </main>
+
+    <!-- This is our footer at the bottom of the webpage -->
+
+    <footer>
+        <p>© 2022 DigiFest Ltd.</p>
+    </footer>
+</body>
+</html>

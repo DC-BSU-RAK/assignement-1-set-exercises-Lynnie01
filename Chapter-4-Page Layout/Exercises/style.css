@@ -1,0 +1,116 @@
+/* These are the stles of our webpage  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/*  And this is the style of the header  */
+header {
+    background-color: #17072b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* This is the main details or content  */
+main {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.welcome {
+    flex: 2;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+}
+
+.line-up {
+    flex: 1;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.line-up h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.line-up ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.line-up ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.line-up ul li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 48%;
+    height: auto;
+    border: 2px solid #ffffff;
+}
+
+/*  This is the Footer  at the bottom of the web page */
+footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
