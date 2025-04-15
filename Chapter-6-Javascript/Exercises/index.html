@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink & Blue Petrol Calculator</title>
+    <style>
+        /* Pink & Blue Color for web page */
+        body {
+            padding: 20px;
+            background: linear-gradient(135deg, #f5d9ff 0%, #d9f4ff 100%);
+            min-height: 100vh;
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            
+            
+        }
+
+        /* Calculator Container - Blue with Pink  */
+        .calculator {
+           
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            background-color: #e6f7ff;
+            border: 2px solid #ffb6c1;
+        }
+
+        /* Pink Heading */
+        h1 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #ff69b4;
+            margin-bottom: 25px;
+            font-size: 24px;
+            
+        }
+
+        /* Input section is Blue  */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4a6baf;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #b8d8ff;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #ff69b4;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+        }
+
+        /* Calculate Button - Pink with Hover Effect */
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+             cursor: pointer;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: all 0.3s ease;
+           
+        }
+
+        button:hover {
+            background-color: #ff1493;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(255, 105, 180, 0.3);
+        }
+
+        /* Result Display - Blue */
+        #result {
+           
+            padding: 15px;
+             margin-top: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4a6baf;
+             background-color: #e6f7ff;
+            font-size: 18px;
+            text-align: center;
+            color: #4a6baf;
+            display: none; /*  This is Hidden until calculation is complete */
+        }
+
+        /*  This is a Fun little pump icon */
+        .pump-icon {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="pump-icon">⛽</div>
+        <h1>Pink & Blue Petrol Calculator</h1>
+        
+        <!-- Cost per liter input -->
+        <div class="input-group">
+            <label for="price">Price per liter (€):</label>
+            <input type="number" id="price" step="0.01" min="0" value="1.72">
+        </div>
+        
+        <!-- This is the  liters purchased input -->
+        <div class="input-group">
+            <label for="liters">Liters purchased:</label>
+            <input type="number" id="liters" min="0" value="0">
+        </div>
+        
+        <!--  This is the Calculate button -->
+        <button id="calculate">Calculate Total</button>
+        
+        <!-- Result display -->
+        <p id="result"></p>
+    </div>
+
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get DOM elements
+            const priceInput = document.getElementById('price');
+            const litersInput = document.getElementById('liters');
+            const calculateBtn = document.getElementById('calculate');
+            const resultDisplay = document.getElementById('result');
+            
+            // Add click event to calculate button
+            calculateBtn.addEventListener('click', function() {
+                // Get input values and convert to numbers
+                const pricePerLiter = parseFloat(priceInput.value);
+                const liters = parseFloat(litersInput.value);
+                
+                // Validate inputs
+                if (isNaN(pricePerLiter) || isNaN(liters) || pricePerLiter < 0 || liters < 0) {
+                    resultDisplay.textContent = "Please enter valid positive numbers!";
+                    resultDisplay.style.display = 'block';
+                    return;
+                }
+                
+                // Calculate total cost
+                const totalCost = (pricePerLiter * liters).toFixed(2);
+                
+                // Display result with fun emoji
+                resultDisplay.textContent = `Total Cost: €${totalCost} 💸`;
+                resultDisplay.style.display = 'block';
+            });
+            
+            // Bonus: Add animation to the pump icon on calculation
+            calculateBtn.addEventListener('click', function() {
+                const pump = document.querySelector('.pump-icon');
+                pump.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    pump.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
